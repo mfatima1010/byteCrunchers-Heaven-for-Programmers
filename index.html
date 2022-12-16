@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/70438e9f6b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <title>byteCrunchers-Heaven for Programmers</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">byteCrunchers</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Technology</a></li>
+                <li><a class="dropdown-item" href="#">Web Development</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="#">Write For Us</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-primary" type="submit">
+              Search
+            </button>
+          </form>
+          <div class="login mx-2">
+            <button
+              class="btn btn-danger"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+            >
+              Login
+            </button>
+            <button
+              class="btn btn-danger"
+              data-bs-toggle="modal"
+              data-bs-target="#signupModal"
+            >
+              SignUp
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--LOGIN  Modal -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Login to byteCrunchers
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Check me out</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIGNUP Modal -->
+    <div
+      class="modal fade"
+      id="signupModal"
+      tabindex="-1"
+      aria-labelledby="signupModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Create an Account
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="abc defg"
+                />
+                <label for="floatingInput">Your Name</label>
+              </div>
+              <div class="mb-3">
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                  />
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <div id="floatingInput" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="cexampleInputPassword1" class="form-label"
+                  >Confirm Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="cexampleInputPassword1"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                Create Account
+              </button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            height="450px"
+            src="./Images/apple.avif"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h2><b>Welcome To byteCrunchers</b></h2>
+            <p>Technology is best when it brings people together.</p>
+            <button class="btn btn-primary">Technology</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            height="450px"
+            src="./Images/ghj.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h2><b>The Best Coding Blog & Learning Platform</b></h2>
+            <p>Technology News,Development & Trends.</p>
+            <button class="btn btn-success">WebDev</button>
+            <button class="btn btn-danger">Tech Fun</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            height="450px"
+            src="./Images/wri.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h2><b>Write For Us</b></h2>
+            <p>"I write to discover what I know."</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="container my-4">
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">#World </strong>
+              <h3 class="mb-0"><b>Round The Globe...</b></h3>
+              <div class="mb-1 text-muted">Oct 10</div>
+              <p class="card-text mb-auto">
+                We have attended global conferences and our 982 branches are
+                spread across the globe.
+              </p>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img
+                class="bd-placeholder-img"
+                width="200"
+                height="250"
+                src="./Images/a.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success">#Learner</strong>
+              <h3 class="mb-0"><b>Learn New Technologies With Us</b></h3>
+              <div class="mb-1 text-muted">Nov 11</div>
+              <p class="mb-auto">
+                Not just a writing blog but also we teach different technologies
+                to enthusiastic individuals.
+              </p>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img
+                class="bd-placeholder-img"
+                width="200"
+                height="250"
+                src="./Images/webb.jpeg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mx-5">
+      <h1>Some Avid Writers...</h1>
+      <div class="col-lg-4">
+        <img
+          class="bd-placeholder-img rounded-circle"
+          width="140"
+          height="140"
+          src="./Images/zara.jpg"
+          alt=""
+        />
+
+        <h2>Zarah</h2>
+        <p>Hi,I am Zarah,a software developer working in...</p>
+        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+      </div>
+      <!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img
+          class="bd-placeholder-img rounded-circle"
+          width="140"
+          height="140"
+          src="./Images/adrian.jpg"
+          alt=""
+        />
+
+        <h2>Adrian</h2>
+        <p>Hey,I am Adrian, CEO of Innotor Company...</p>
+        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+      </div>
+      <!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img
+          class="bd-placeholder-img rounded-circle"
+          width="140"
+          height="140"
+          src="./Images/janny.jpg"
+          alt=""
+        />
+
+        <h2>Janny</h2>
+        <p>Greetings! I am Janny,a University student...</p>
+        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+      </div>
+      <!-- /.col-lg-4 -->
+    </div>
+
+    <div class="px-4 pt-5 my-5 text-center border-bottom">
+      <h1 class="display-4 fw-bold">Exciting Offers!!!</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+          Write for us and get a chance to win many exciting prizes and offers
+          from our team.
+        </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+            Let's Get Started...
+          </button>
+        </div>
+      </div>
+      <div class="overflow-hidden" style="max-height: 45vh">
+        <div class="container px-5">
+          <img
+            src="./Images/gifts.jpg"
+            class="img-fluid border rounded-3 shadow-lg mb-4"
+            alt="Example image"
+            loading="lazy"
+            width="700"
+            height="700"
+          />
+        </div>
+      </div>
+    </div>
+
+    <footer class="container">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>
+        © 2018-2022 byteCrunchers, Inc. · <a href="#">Privacy</a> ·
+        <a href="#">Terms</a>
+      </p>
+      <i position="relative" class="fab fa-twitter fa-lg"></i>
+      <i position="relative" class="fab fa-instagram fa-lg"></i>
+      <i position="relative" class="fab fa-facebook fa-lg"></i>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

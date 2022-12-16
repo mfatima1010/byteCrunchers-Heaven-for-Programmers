@@ -1,0 +1,9 @@
+
+.fab{
+    padding: 1%;
+}
+.fab:hover{
+    cursor: pointer;
+   color: blue;
+}
+
